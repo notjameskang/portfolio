@@ -1,0 +1,102 @@
+
+/* Base Navbar Styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+/* Hamburger Menu (CSS Only) */
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: 0.3s;
+  transform-origin: center;
+}
+
+/* Navbar 1: Glassmorphism */
+.navbar-glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  top: 0;
+}
+
+.navbar-glass .nav-logo,
+.navbar-glass .nav-link {
+  color: white;
+}
+
+.navbar-glass .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: width 0.5s ease;
+}
+
+.navbar-glass .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-glass .nav-link:hover {
+  color: #6366f1;
+  transform: translateY(-3px);
+}
+

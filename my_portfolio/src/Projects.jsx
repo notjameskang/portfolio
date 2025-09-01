@@ -1,9 +1,4 @@
-
-
-
-
-
-
+import "./projects.css"
 function Projects() {
     return (
         <>
@@ -38,3 +33,4 @@ function Projects() {
         </>
     )
 }
+export default Projects
