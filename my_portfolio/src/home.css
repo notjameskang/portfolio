@@ -210,12 +210,15 @@ nav .right a span {
 .contact-section .group form input,
 .contact-section .group form textarea {
     font-family: 'Poppins', sans-serif;
-    border: 2px solid white;
-    background-color: transparent;
+    background-color: white;
     padding: 10px;
     margin-bottom: 15px;
     outline: none;
     resize: none;
+}
+.contact-section #attachment {
+    padding: 3px;
+    background-color: transparent;
 }
 
 .contact-section form button.submit {
@@ -232,12 +235,13 @@ nav .right a span {
 button.reset {
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
-    color: #fff;
+    color: #000000;
     background-color: light grey;
     border: none;
     height: 50px;
     cursor: pointer;
     transition: .1s;
+    margin-top: 10px;
 }
 
 

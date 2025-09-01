@@ -10,3 +10,11 @@ body {
   padding-top: 70px; /* match navbar height */
   font-family: Arial, sans-serif;
 }
+
+/* index.css or App.css */
+#root {
+  margin: 0 auto;           /* Center horizontally */
+  padding: 0rem;            /* Add some breathing space */
+  max-width: 200000rem;        /* Prevent it from stretching too wide */
+
+}

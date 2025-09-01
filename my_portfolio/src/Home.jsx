@@ -83,13 +83,8 @@ function Home() {
               <input type="email" id="email" />
 
               <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" list="subjects" required />
-              <datalist id="subjects">
-                <option value="Coffee Chat"></option>
-                <option value="Project Request"></option>
-                <option value="Website Feedback"></option>
-                <option value="Other"></option>
-              </datalist>
+              <input id="subject" name="subject" type="text"required />
+          
               <label for="message">Message</label>
               <textarea id="message" cols="30" rows="10"></textarea>
               <label for="attachment">Attachment (optional)</label>
